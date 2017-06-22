@@ -1,0 +1,28 @@
+name: github.com/opspec-pkgs/git.config.set-option
+description: sets a git config option
+inputs:
+  dotGitDir:
+    dir:
+      description: git repo .git directory
+      default: .git
+  name:
+    string:
+      constraints: { minLength: 1 }
+      description: name of the config option to set
+  value:
+    string:
+      constraints: { minLength: 1 }
+      description: value of the config option to set
+version: 1.0.0
+run:
+  container:
+    cmd: [ /cmd.sh ]
+    dirs:
+      /.git: dotGitDir
+    envVars:
+      name:
+      value:
+    files:
+      /cmd.sh:
+    image: { ref: 'opspecpkgs/git.config.set-option:1.0.0' }
+    workDir: /

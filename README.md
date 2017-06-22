@@ -23,7 +23,7 @@ opctl run github.com/opspec-pkgs/git.config.set-option#VERSION
 op:
   pkg: { ref: github.com/opspec-pkgs/git.config.set-option#VERSION }
   inputs: 
-    dotGitDir:
+    config:
     name:
     value:
 ```

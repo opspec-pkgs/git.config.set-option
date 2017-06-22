@@ -13,6 +13,10 @@ inputs:
     string:
       constraints: { minLength: 1 }
       description: value of the config option to set
+outputs:
+  config:
+    file:
+      description: git config file
 version: 1.0.0
 run:
   container:

@@ -26,4 +26,6 @@ op:
     config:
     name:
     value:
+  outputs: 
+    config:
 ```

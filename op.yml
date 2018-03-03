@@ -26,6 +26,6 @@ run:
       value:
     files:
       /cmd.sh:
-      /config: config
+      /config: $(config)
     image: { ref: 'opspecpkgs/git.config.set-option:1.0.0' }
     workDir: /

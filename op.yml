@@ -17,7 +17,7 @@ outputs:
   config:
     file:
       description: git config file
-version: 1.0.0
+version: 1.1.0
 run:
   container:
     cmd: [ /cmd.sh ]
@@ -27,5 +27,5 @@ run:
     files:
       /cmd.sh:
       /config: $(config)
-    image: { ref: 'opspecpkgs/git.config.set-option:1.0.0' }
+    image: { ref: 'opspecpkgs/git.config.set-option:1.1.0' }
     workDir: /
